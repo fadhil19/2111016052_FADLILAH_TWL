@@ -1,0 +1,149 @@
+/* Color scheme */
+:root {
+  --primary-color: #0077cc;
+  --primary-color-dark: #005fa3;
+  --light-grey: #f5f5f5;
+  --border-color: #ddd;
+  --text-color: #333;
+  --button-text-color: #fff;
+  }
+  
+  /* Typography */
+  h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  }
+  
+  /* Table */
+  table {
+  border-collapse: collapse;
+  width: 100%;
+  }
+  
+  th,
+  td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  }
+  
+  th {
+  background-color: var(--light-grey);
+  }
+  
+  tbody tr:hover {
+  background-color: var(--light-grey);
+  }
+  
+  /* Buttons */
+  button {
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  }
+  
+  button:hover {
+  background-color: var(--primary-color-dark);
+  }
+  
+  .add-user-button {
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  }
+  
+  .add-user-button:hover {
+  background-color: var(--primary-color-dark);
+  }
+  
+  .add-user-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.4);
+  }
+  
+  /* Layout */
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  }
+  
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  .container {
+  padding: 0 10px;
+  }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button[type="submit"] {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #005fa3;
+  }
+  
+  button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.4);
+  }
+  
+  
+  /* Comments /
+  / This is a comment explaining the purpose of this section /
+  .section {
+  / This is a comment explaining what this rule does */
+  
